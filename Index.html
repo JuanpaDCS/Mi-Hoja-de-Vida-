@@ -1,69 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Hoja de Vida</title>
+    <title>Hoja de Vida | Juan Pablo Cifuentes</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Juan Pablo Cifuentes</h1>
+    <header>
+        <div class="header-content">
+            <img src="Fotos.jpeg" alt="Foto de Juan Pablo" class="profile-img">
+            <h1>Juan Pablo Cifuentes</h1>
+            <h2>Tecnólogo en Gestión de Obras Civiles | Desarrollador Web</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> juanp@email.com | <i class="fas fa-phone"></i> 300-1234567</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about"><i class="fas fa-user"></i> Acerca de mí</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Formación</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experiencia</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Habilidades</a></li>
+                <li><a href="#languages"><i class="fas fa-language"></i> Idiomas</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>
-       <ul>  <li>  Tenclogo en Gestión y construcción de obras civiles </li>
-        <li> Desarollardor web </li> 
-    </ul>
-    </h2>
-    <p>Correo: juanp@email.com | Tel: 300-1234567</p>
-    <nav> 
-        <ul>
-            <li> <a href="#about"> Perfil</a></li>
-        </ul>
-    </nav>
-  </header>
+    <main>
+        <section id="about" class="section-card">
+            <h2><i class="fas fa-user-tie"></i> Acerca de mí</h2>
+            <p>Soy un desarrollador web con experiencia en construcción civil, combinando habilidades técnicas en HTML, CSS, JavaScript y gestión de proyectos. Apasionado por crear soluciones innovadoras.</p>
+        </section>
 
-  <section id="about">
-    <h2>Acerca de mí</h2>
-    <p>Soy un desarrollador web con más de 5 años de experiencia en la creación de aplicaciones web modernas utilizando tecnologías como HTML, CSS, JavaScript y frameworks como React y Node.js.</p>
-  </section>
+        <section id="education" class="section-card">
+            <h2><i class="fas fa-university"></i> Formación Académica</h2>
+            <ul>
+                <li><strong>Instituto Superior de Educación Rural (ISER)</strong> – Tecnólogo en Gestión de Obras Civiles (2018-2022)</li>
+                <li><strong>Campusland</strong> – Certificación en Desarrollo Backend (2025)</li>
+                <li><strong>Universidad Industrial de Santander</strong> – Ingeniería Civil (2022-actualidad)</li>
+            </ul>
+        </section>
 
-  <section id="education">
-    <h2>Formación Académica</h2>
-    <ul>
-      <li> <strong> Instituo Superior de Educación Rural-ISER</strong> – Tenclogo en Gestión y construcción de Obras Civiles (2018 -2022)</li>
-      <li><strong>Campusland</strong> – Certificación en desarrollador backend juniot (2025)</li>
-      <li><strong>Universidad de Industrial de Santander</strong> – Ingeniería de Civil (2022...)</li>
-    </ul>
-  </section>
+        <section id="experience" class="section-card">
+            <h2><i class="fas fa-hard-hat"></i> Experiencia Laboral</h2>
+            <ul>
+                <li><strong>Prácticas Laborales</strong> – ISER (2021)<br>
+                    <span class="job-desc">Supervisión de obras civiles y gestión de recursos.</span></li>
+                <li><strong>Desarrollador Web Freelance</strong> (2018-2022)<br>
+                    <span class="job-desc">Creación de sitios web con HTML, CSS y JavaScript.</span></li>
+            </ul>
+        </section>
 
-  <section id="experience">
-    <h2>Experiencia Laboral</h2>
-    <ul>
-      <li><strong>Practicas Laborales </strong> – ISER (2021)</li>
-      <li><strong> Desarollardor web</strong> – Freelance (2018–2022)</li>
-    </ul>
-  </section>
+        <section id="skills" class="section-card">
+            <h2><i class="fas fa-tools"></i> Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Técnicas</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>React, Node.js</li>
+                        <li>Git, GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Blandas</h3>
+                    <ul>
+                        <li>Trabajo en equipo</li>
+                        <li>Gestión de proyectos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-  <section id="skills">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>HTML5, CSS3, JavaScript</li>
-      <li>React, Node.js</li>
-      <li>Git, GitHub</li>
-      <li>SQL, MongoDB</li>
-    </ul>
-  </section>
-  <section id = "Idiomas">
-  <h2>Idiomas </h2>
-  <ul>
-    <li> Español</li>
-    <li> Ingles Basico</li>
-  </ul>
-  </section>
+        <section id="languages" class="section-card">
+            <h2><i class="fas fa-globe"></i> Idiomas</h2>
+            <ul class="language-list">
+                <li>Español <span class="language-level">(Nativo)</span></li>
+                <li>Inglés <span class="language-level">(Básico)</span></li>
+            </ul>
+        </section>
+    </main>
 
-  <footer>
-    <p>© 2025 Juan Pablo Cifuentes</p>
-  </footer>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/juan-pablo-cifuentes-86a476204/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/JuanpaDCS" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>© 2025 Juan Pablo Cifuentes | Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
